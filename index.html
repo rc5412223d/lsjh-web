@@ -1,0 +1,2376 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <!--目前$_SESSION['bootstrap']="4"; -->
+    <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
+    
+    <!--載入由使用者設定的各項佈景變數-->
+    
+
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        
+        <meta name="robots" content="index,follow">
+        <meta name="keywords" content="歡迎光臨龍興國中">
+        <meta name="description" content="創新、適性、優質!!龍興國中歡迎您!!">
+        <meta name="rating" content="general">
+        <meta name="author" content="XOOPS">
+        <meta name="copyright" content="Copyright @ 2001-2012">
+        <meta name="generator" content="XOOPS">
+        <meta property="og:title" content="龍興國中 - 歡迎光臨">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.lsjh.tyc.edu.tw/">
+        <meta property="og:image" content="https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/logo/logo_4_12.png">
+        <meta property="og:site_name" content="龍興國中">
+    <!-- 網站的標題及標語 -->
+    <title>龍興國中 - 歡迎光臨</title>
+
+    
+        <!-- Rss -->
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.lsjh.tyc.edu.tw/backend.php">
+        <!-- icon -->
+        <link href="https://www.lsjh.tyc.edu.tw/favicon.ico" rel="SHORTCUT ICON">
+        <!-- Sheet Css -->
+        <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="https://www.lsjh.tyc.edu.tw/xoops.css">
+        <!-- XOOPS theme Sheet Css -->
+        <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="https://www.lsjh.tyc.edu.tw/themes/school2014/css/xoops.css">
+        <!-- 33-1 html -->
+        <link href="https://www.lsjh.tyc.edu.tw/modules/tadtools/bootstrap3/css/bootstrap.css" rel="stylesheet" media="all">
+        <!-- 33-2 html -->
+        <link href="https://www.lsjh.tyc.edu.tw/modules/tadtools/html/bootstrap.min.css" rel="stylesheet" media="all">
+        <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+        <link href="https://www.lsjh.tyc.edu.tw/modules/tadtools/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css" media="all" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- font-awesome -->
+        <link href="https://www.lsjh.tyc.edu.tw/modules/tadtools/css/font-awesome/css/font-awesome.css" rel="stylesheet" media="all">
+        <!-- Theme Sheet Css -->
+        <link rel="stylesheet" type="text/css" media="all" href="https://www.lsjh.tyc.edu.tw/themes/school2014/css/style.css">
+
+
+    <!-- 給模組套用的樣板標籤 -->
+    <script src="https://www.lsjh.tyc.edu.tw/browse.php?Frameworks/jquery/jquery.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/browse.php?Frameworks/jquery/plugins/jquery.ui.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/jquery/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/include/xoops.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/themes/school2014/language/tchinese_utf8/script.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/syntaxhighlighter/scripts/shCore.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/syntaxhighlighter/scripts/shAutoloader.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+                  function path()
+                  {
+                    var args = arguments,
+                    result = [];
+                    for(var i = 0; i < args.length; i++)
+                        result.push(args[i].replace('@', 'https://www.lsjh.tyc.edu.tw/modules/tadtools/syntaxhighlighter/scripts/'));
+                    return result
+                  };
+
+                  $(document).ready(function(){
+                    SyntaxHighlighter.autoloader.apply(null, path(
+                    'applescript            @shBrushAppleScript.js',
+                    'actionscript3 as3      @shBrushAS3.js',
+                    'bash shell             @shBrushBash.js',
+                    'coldfusion cf          @shBrushColdFusion.js',
+                    'cpp c                  @shBrushCpp.js',
+                    'c# c-sharp csharp      @shBrushCSharp.js',
+                    'css                    @shBrushCss.js',
+                    'delphi pascal          @shBrushDelphi.js',
+                    'diff patch pas         @shBrushDiff.js',
+                    'erl erlang             @shBrushErlang.js',
+                    'groovy                 @shBrushGroovy.js',
+                    'java                   @shBrushJava.js',
+                    'jfx javafx             @shBrushJavaFX.js',
+                    'js jscript javascript  @shBrushJScript.js',
+                    'perl pl                @shBrushPerl.js',
+                    'php                    @shBrushPhp.js',
+                    'text plain             @shBrushPlain.js',
+                    'py python              @shBrushPython.js',
+                    'ruby rails ror rb      @shBrushRuby.js',
+                    'sass scss              @shBrushSass.js',
+                    'scala                  @shBrushScala.js',
+                    'sql                    @shBrushSql.js',
+                    'vb vbnet               @shBrushVb.js',
+                    'xml xhtml xslt html    @shBrushXml.js'
+                    ));
+                    SyntaxHighlighter.defaults['smart-tabs'] = true;
+                    SyntaxHighlighter.defaults['tab-size'] = 2;
+                    SyntaxHighlighter.defaults['toolbar'] = false;
+
+                    SyntaxHighlighter.all();
+                  });
+
+                
+//]]></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/prism/prism.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/fancyBox/lib/jquery.mousewheel.pack.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/fancyBox/source/jquery.fancybox.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+                jQuery(document).ready(function(){
+                    $('.fancybox_nsn').fancybox({
+                    
+                    fitToView : true,
+                    width   : '1920',
+                    height    : '1080',
+                    
+                    
+                    autoSize  : false,
+                    closeClick  : false,
+                    openEffect  : 'none',
+                    closeEffect : 'none'
+                    
+                    
+                    });
+                });
+            
+//]]></script>
+<script type="text/javascript" src="https://www.lsjh.tyc.edu.tw/class/textsanitizer/image/image.js"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/sweet-alert/sweet-alert.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+            function delete_tad_news_func(nsn){
+                swal({
+                    title: '確定要刪除此資料？',
+                    text: '相關資料通通都將會被移除！',
+                    type: 'warning',
+                    html: '',
+                    showCancelButton: true,
+                    confirmButtonColor: '#DD6B55',
+                    confirmButtonText: '確定刪除！',
+                    closeOnConfirm: false ,
+                    allowOutsideClick: true
+                },
+                function(){
+                    location.href='/index.php?op=delete_tad_news&nsn=' + nsn;
+                });
+            }
+            
+//]]></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="https://www.lsjh.tyc.edu.tw/modules/mytabs/jscript/tabcontent.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/jquery/themes/base/jquery.ui.all.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/language/tchinese_utf8/style.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/syntaxhighlighter/styles/shCore.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/syntaxhighlighter/styles/shThemeMonokai.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/prism/prism.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/css/iconize.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/fancyBox/source/jquery.fancybox.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/sweet-alert/sweet-alert.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadnews/css/module.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadnews/css/module2.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/mytabs/menus/shadetabs/style.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/css/vertical_menu.css" type="text/css" />
+<link rel="stylesheet" href="https://www.lsjh.tyc.edu.tw/media/font-awesome/css/font-awesome.min.css" type="text/css" />
+
+
+
+    <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.tpl 那就不需要這一部份 -->
+    <!--導覽工具列、區塊標題CSS設定開始 by hc-->
+<style type="text/css">
+  body{
+    color:#202020;
+    background-color: #ffffff;
+        background-position:  center center;
+    background-repeat:  repeat;
+    background-attachment:scroll;
+    background-size: ;
+    font-size:11pt;
+    font-family: "Helvetica Neue",Helvetica,Arial,"微軟正黑體",sans-serif;
+  }
+
+  a{
+    color:#005ca8;
+    font-family: FontAwesome, "Helvetica Neue",Helvetica,Arial,"微軟正黑體",sans-serif;
+  }
+
+  a:hover{
+    color:#a40019;
+  }
+
+
+    .leftBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .leftBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .leftBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;margin-top:5px;
+  }
+  
+  
+  .rightBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .rightBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .rightBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;margin-top:5px;
+  }
+  
+  
+  .centerBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .centerBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .centerBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin:5px -40px 10px 5px;
+  }
+  
+    .centerBlock .blockContent{
+    margin:5px -40px 10px 5px;
+  }
+  
+  .centerLeftBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .centerLeftBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .centerLeftBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .centerRightBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .centerRightBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .centerRightBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .centerBottomBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .centerBottomBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .centerBottomBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .centerBottomLeftBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .centerBottomLeftBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .centerBottomLeftBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .centerBottomRightBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .centerBottomRightBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .centerBottomRightBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .footerCenterBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .footerCenterBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .footerCenterBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .footerLeftBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .footerLeftBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .footerLeftBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+  .footerRightBlock .blockTitle{
+    font-size: 1em;    color: #ffffff;    background-color: #5E95FF;            text-indent: 5px;        border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+      }
+
+  .footerRightBlock a.block_config{
+    float:right;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+    .footerRightBlock .blockTitle{
+    border:none;height:40px;line-height:40px;margin-bottom:10px;
+  }
+  
+  
+
+  
+.navbar-default {
+  background-color: #2fa4e7;
+  background-image: -moz-linear-gradient(top, #54b4eb, #2fa4e7);
+  background-image: -webkit-linear-gradient(top, #54b4eb, #2fa4e7);
+  background-image: -o-linear-gradient(top, #54b4eb, #2fa4e7);
+  background-image: linear-gradient(to bottom, #54b4eb, #2fa4e7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#54b4eb), to());
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#54b4eb, endColorstr=#2fa4e7, GradientType=0);
+  min-height: inherit;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+  padding: px 15px;
+  }
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color:#FFFF00;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #1684c2;
+}
+
+
+.navbar-default .navbar-nav li.dropdown.open > .dropdown-toggle,
+.navbar-default .navbar-nav li.dropdown.active > .dropdown-toggle,
+.navbar-default .navbar-nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: #1684c2;
+}
+
+.navbar-default .navbar-navbar-btn {
+  background-color: #2fa4e7;
+  background-image: -moz-linear-gradient(top, #54b4eb, #2fa4e7);
+  background-image: -webkit-linear-gradient(top, #54b4eb, #2fa4e7);
+  background-image: -o-linear-gradient(top, #54b4eb, #2fa4e7);
+  background-image: linear-gradient(to bottom, #54b4eb, #2fa4e7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#54b4eb), to());
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#54b4eb, endColorstr=#2fa4e7, GradientType=0);
+
+}
+
+.dropdown-menu > li > a{
+  }
+
+
+
+
+  </style>
+<!--導覽工具列、區塊標題CSS設定 by hc-->
+    <style type="text/css">
+      body{
+        font-family:"Helvetica Neue",Helvetica,Arial,"微軟正黑體",sans-serif;
+      }
+
+      #xoops_theme_left_zone{
+              }
+
+      #xoops_theme_right_zone{
+              }
+    </style>
+  </head>
+
+  <body>
+    <!-- 頁面容器 -->
+
+        <div id="xoops_theme_container" style="position:relative;width:1050px;margin:5px auto 0 auto;padding:0px;">
+    
+      <div  id="xoops_theme_content" style="width:auto;">
+        <!-- logo -->
+              </div>
+
+
+      <div  id="xoops_theme_content" style="width:auto;">
+        <div >
+          <div id="xoops_theme_content_display" style="background-color:#FFFFFF;">
+
+              <!-- 頁首 -->
+              <div  id="xoops_theme_header">
+
+                  <!-- 導覽列 -->
+                                      
+
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/colorbox/colorbox.css">
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="https://www.lsjh.tyc.edu.tw/modules/tadtools/css/xoops.css">
+<script type="text/javascript" src="https://www.lsjh.tyc.edu.tw/modules/tadtools/colorbox/jquery.colorbox.js"></script>
+<script>
+    function tad_themes_popup(URL) {
+        $.colorbox({iframe:true, width:"80%", height:"90%",href : URL});
+    }
+</script>
+<style>
+    .navbar-default{
+        border-color: transparent;
+        border:none;
+        border-radius:0px;
+    }
+</style>
+
+
+
+
+    <nav id="main-nav" class="navbar navbar-default sticky-top" role="navigation" style="background-color:#54b4eb;">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+                                                <a class="navbar-brand" href="https://www.lsjh.tyc.edu.tw/index.php" style="color:#FFFFFF">龍興國中</a>
+                                    </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <a accesskey="U" href="#xoops_theme_nav_key" title="上方導覽工具列" id="xoops_theme_nav_key" style="color: transparent; font-size: 0.625rem; position: absolute;">:::</a>
+            <ul class="nav navbar-nav" id="main-menu-left">
+                                                    <li>
+        <a  href="https://sites.google.com/lsjh.tyc.edu.tw/schoolweb-english/" target="_blank">
+        <i class="fa fa-globe"></i> English         </a>
+            </li>
+    <li>
+        <a class="dropdown-toggle" data-toggle="dropdown"  >
+        <i class="fa fa-th-large"></i> 教師園地  <span class="caret"></span>        </a>
+                                                                                <ul class="dropdown-menu">
+                    <li>
+                <a  href="http://163.30.124.150/mail/mail.php" target="_blank">
+                <i class="fa fa-envelope"></i> 教師Gmail信箱
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://drive.google.com/drive/" target="_blank">
+                <i class="fa fa-th-list"></i> Google雲端硬碟
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://163.30.124.150/moodle/" target="_blank">
+                <i class="fa fa-globe"></i> 龍興e學院
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://drp.tyc.edu.tw/TYDRP/Index.aspx" target="_blank">
+                <i class="fa fa-hand-up"></i> 教師研習報名系統
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://sso.tyc.edu.tw/TYESSO/Login.aspx" target="_blank">
+                <i class="fa fa-fullscreen"></i> 新版校務行政系統(雲端學務)
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://tycg.cloudhr.tw/TY_SCHOOL/login.aspx" target="_blank">
+                <i class="fa fa-user"></i> WebCHR雲端差勤管理系統
+                                </a>
+                            </li>
+            </ul>
+                                        </li>
+    <li>
+        <a class="dropdown-toggle" data-toggle="dropdown"  >
+        <i class="fa "></i> 學生園地  <span class="caret"></span>        </a>
+                                                                                <ul class="dropdown-menu">
+                    <li>
+                <a  href="http://mail.google.com/a/stu.lsjh.tyc.edu.tw/" target="_blank">
+                <i class="fa fa-envelope"></i> 學生信箱
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://docs.google.com/spreadsheets/d/1c7z5uC7aOhDytv-7F45PpFqSdg4090EY/edit?usp=sharing&ouid=103281961666506136258&rtpof=true&sd=true" target="_blank">
+                <i class="fa fa-asterisk"></i> 學生gmail查詢
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://163.30.124.150/moodle/" target="_blank">
+                <i class="fa fa-globe"></i> 龍興e學院
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://sites.google.com/lsjh.tyc.edu.tw/elearning/%E7%8F%AD%E7%B4%9Agoogle-classroom?authuser=0" target="_self">
+                <i class="fa fa-group"></i> 班級google classroom
+                                </a>
+                            </li>
+            </ul>
+                                        </li>
+    <li>
+        <a class="dropdown-toggle" data-toggle="dropdown"  >
+        <i class="fa "></i> E化校園  <span class="caret"></span>        </a>
+                                                                                <ul class="dropdown-menu">
+                    <li>
+                <a  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/index.php?op=list_docs&tbsn=5" target="_self">
+                <i class="fa fa-file"></i> E化校園系統服務說明
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://eip.tyc.edu.tw/tyeip/login.aspx" target="_blank">
+                <i class="fa fa-file"></i> 教室平板預約及報修系統
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://doc.tyc.edu.tw/" target="_blank">
+                <i class="fa fa-briefcase"></i> 教育局線上填報暨通知系統
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://odis.tycg.gov.tw/" target="_blank">
+                <i class="fa fa-file"></i> 桃園市公文整合系統
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://163.30.124.236/HealthWeb/" target="_blank">
+                <i class="fa fa-heart"></i> 學生健康系統
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://drive.google.com/drive/folders/1kCGHFfLfmtvlCibmipskJPFtjGENZnYt?usp=sharing" target="_blank">
+                <i class="fa fa-th-large"></i> 龍興雲端FTP檔案共享
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://www.youtube.com/user/tyclsjh/playlists" target="_blank">
+                <i class="fa fa-music"></i> 龍興影音頻道
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://www.teamviewer.com/link/?url=505374&id=448202836" target="_blank">
+                <i class="fa fa-resize-small"></i> 遠端支援軟體TeamViewer
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://download.anydesk.com/AnyDesk.exe?_ga=2.112032196.1754125100.1553480227-1297167679.1548652737" target="_blank">
+                <i class="fa fa-resize-small"></i> 遠端支援軟體AnyDesk
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=32" target="_self">
+                <i class="fa fa-headphones"></i> 智慧教室
+                                </a>
+                            </li>
+                    <li>
+                <a  href="https://www.led-cloud.com/" target="_self">
+                <i class="fa fa-inbox"></i> LED電視牆雲端系統
+                                </a>
+                            </li>
+                    <li>
+                <a  href="http://10.33.148.14/" target="_blank">
+                <i class="fa fa-fullscreen"></i> 校園無聲廣播系統
+                                </a>
+                            </li>
+            </ul>
+                                        </li>
+    <li>
+        <a  href="https://tycg.cloudhr.tw/TY_SCHOOL/login.aspx" target="_blank">
+        <i class="fa fa-user"></i> 差勤系統         </a>
+            </li>
+    <li>
+        <a  href="https://read.moe.edu.tw/034545/library" target="_blank">
+        <i class="fa fa-globe"></i> 圖書館         </a>
+            </li>
+    <li>
+        <a  href="http://163.30.124.236/classtable/" target="_blank">
+        <i class="fa fa-list-alt"></i> 課表查詢         </a>
+            </li>
+    <li>
+        <a  href="http://www.lsjh.tyc.edu.tw/modules/tadnews/post.php" target="_self">
+        <i class="fa "></i> 新聞公告         </a>
+            </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" id="main-menu-right">
+                        <li id="preview-menu">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                登入 <span class="caret"></span>
+                </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+          <li>
+        <form action="https://www.lsjh.tyc.edu.tw/user.php" method="post" class="form-horizontal" role="form">
+          <fieldset style="min-width: 200px; margin: 10px;">
+            <legend>
+            登入            </legend>
+                        <div class="form-group">
+              <label class="col-sm-4 control-label" for="uname">
+                帳號
+              </label>
+              <div class="col-sm-8">
+                <input type="text" name="uname"  id="uname" placeholder="請輸入帳號"  class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-4 control-label" for="pass">
+                密碼
+              </label>
+              <div class="col-sm-8">
+              <input type="password" name="pass" id="pass" placeholder="請輸入密碼" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-4 control-label">
+              </label>
+              <div class="col-sm-8">
+                <input type="hidden" name="xoops_redirect" value="/">
+                <input type="hidden" name="rememberme" value="On">
+                <input type="hidden" name="op" value="login">
+                <input type="hidden" name="xoops_login" value="1">
+                <button type="submit" class="btn btn-primary btn-block">登入</button>
+              </div>
+            </div>
+
+                      </fieldset>
+        </form>
+
+      </li>
+
+    
+          
+
+                      
+
+  </ul>
+            </li>
+                        </ul>
+        </div>
+        </div>
+    </nav>
+
+
+            <script type="text/javascript" src="https://www.lsjh.tyc.edu.tw/modules/tadtools/jquery.sticky/jquery.sticky.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav-container").sticky({topSpacing:0 , zIndex: 100});
+        });
+        </script>
+                      
+                  <!-- 滑動圖 -->
+                    <div >
+    <div  style="position:relative;width:100%px; ">
+
+            <a href="https://www.lsjh.tyc.edu.tw/index.php"><img id="website_logo" src="https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/logo/logo_4_12.png" style="max-width: 100%;position: absolute; z-index: 5; " alt="龍興國中" title="龍興國中" class="img-responsive "></a>
+    
+    
+            <link rel='stylesheet' type='text/css' href='https://www.lsjh.tyc.edu.tw/modules/tadtools/ResponsiveSlides/reset.css' >
+            <link rel='stylesheet' type='text/css' href='https://www.lsjh.tyc.edu.tw/modules/tadtools/ResponsiveSlides/responsiveslides.css' >
+            
+            <script language='javascript' type='text/javascript' src='https://www.lsjh.tyc.edu.tw/modules/tadtools/ResponsiveSlides/responsiveslides.js'></script>
+
+            <script type='text/javascript'>
+                $(document).ready( function(){
+                    jQuery('#DwBMUO').responsiveSlides({
+                        auto: true,
+                        pager: false,
+                        nav: 1,
+                        timeout: 5000,
+                        pause: true,
+                        pauseControls: true,
+                        namespace: 'callbacks'
+                    });
+                });
+            </script>
+            
+        <div class='callbacks'>
+            <ul class='rslides' id='DwBMUO' style='margin-top: px;'>
+                
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_10_fYC.png' alt='slider image 393'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_9_AsS.png' alt='slider image 392'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_8_qRW.png' alt='slider image 391'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_4_Ar3.png' alt='slider image 386'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_13_7JS.png' alt='slider image 385'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_11_SRX.png' alt='slider image 383'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_6_33p.png' alt='slider image 389'></a>
+                    
+                </li>
+            
+                <li>
+                    <a href='https://www.lsjh.tyc.edu.tw' ><img src='https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/slide/slide_8_7_eVE.png' alt='slider image 390'></a>
+                    
+                </li>
+            
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+            </div>
+  </div>
+
+                  <!-- 導覽列 -->
+                                </div>
+
+              <!-- 載入布局 -->
+              <div id="xoops_theme_content_zone"  style="background-color:#FFFFFF;">
+            <!-- 若是有左、右區塊 -->
+                    <!-- 若模式是HTML -->
+            <div id="xoops_theme_left_zone" style="float:left; background-color:#F4F4F4;">
+
+                <div id="xoops_theme_left" style="float:left;  width:170px;">
+                    <a accesskey="L" href="#xoops_theme_left_zone_key" title="左邊區域（視佈景版型不同可能包含左右兩側之區塊）" id="xoops_theme_left_zone_key" style="color: transparent; font-size: 0.625rem; position: absolute;">:::</a>
+                                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="關於龍興" title="關於龍興" align="absmiddle" hspace=2>
+                關於龍興
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <STYLE TYPE="text/css">
+
+td#mainmenu a {margin:0px; padding:3px; border:1px solid #DDDDDD;}
+td#mainmenu a:hover {background:#DEE7EC; border:1px solid #8CACBB;}
+td#mainmenu a.menuTop {padding-left:8px;}
+td#mainmenu a.menuMain {padding-left:8px;}
+td#mainmenu a.menuSub {padding-left:16px;}
+<!-- 
+114教室配置圖
+https://drive.google.com/file/d/1krmhF2iQjtBGOHaez0QxCx955X22esKZ/view?usp=sharing
+ -->
+
+</STYLE>
+
+<TABLE cellspacing="0" >
+<TBODY>
+<TR>
+<TD id="mainmenu"  ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=31">
+<li>龍興簡介</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"  ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=4">
+<li>地理位置</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"  ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=4">
+<li>校車路線</li></A></TD>
+</TR>
+<TR>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=5">
+<li>師生概況</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="https://www.lsjh.tyc.edu.tw/uploads/tad_book3/image/115-tel.png">
+<li>處室分機</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="https://drive.google.com/file/d/1eVaI15XxN_5gHCZAFV-7-gHuGnyE_Uwo/view?usp=sharing">
+<li>教室配置圖</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="http://163.30.124.150/safemap/index.htm">
+<li>校安地圖</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="https://drive.google.com/file/d/196rDnjDfj79GhAx13IdddJbbfvgG6cB_/view?usp=sharing">
+<li>學區分布</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?op=tufdl&files_sn=15899#115%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E9%BE%8D%E8%88%88%E5%9C%8B%E4%B8%AD%E7%89%88%E6%9C%AC.pdf">
+<li>115教科書版本</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="https://sites.google.com/lsjh.tyc.edu.tw/teacher-grievances/">
+<li>桃園市申評會</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=10519">
+<li>財務報表公告</li></A></TD>
+</TR>
+<TD id="mainmenu" ><A  href="https://drive.google.com/drive/folders/1tTPqcBI-bOAccVaOPConVrqE6spPxNHq?usp=sharing">
+<li>會計室財務報表</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="https://www.lsjh.tyc.edu.tw/modules/tad_book3/index.php?op=list_docs&tbsn=5">
+<li>龍興系統服務說明</li></A></TD>
+</TR>
+</TBODY></TABLE>
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="行政團隊" title="行政團隊" align="absmiddle" hspace=2>
+                行政團隊
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <STYLE TYPE="text/css">
+
+td#mainmenu a {margin:0px; padding:3px; border:1px solid #DDDDDD;}
+td#mainmenu a:hover {background:#DEE7EC; border:1px solid #8CACBB;}
+td#mainmenu a.menuTop {padding-left:8px;}
+td#mainmenu a.menuMain {padding-left:8px;}
+td#mainmenu a.menuSub {padding-left:16px;}
+
+</STYLE>
+
+<TABLE cellspacing="0" >
+<TBODY>
+<TR>
+<TD id="mainmenu"  ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=7">
+<li>校長室</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=8">
+<li>教務處</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=9">
+<li>學務處</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=10">
+<li>總務處</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=11">
+<li>輔導室</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=12">
+<li>人事室</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=13">
+<li>會計室</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=14">
+<li>教師會</li></A></TD>
+</TR><TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=15">
+<li>家長會</li></A></TD>
+</TR>
+<TD id="mainmenu" ><A  href="https://sites.google.com/lsjh.tyc.edu.tw/ceeec/">
+<li>職探中心</li></A></TD>
+</TR>
+</TBODY></TABLE>
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="教學團隊" title="教學團隊" align="absmiddle" hspace=2>
+                教學團隊
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <STYLE TYPE="text/css">
+
+td#mainmenu a {margin:0px; padding:3px; border:1px solid #DDDDDD;}
+td#mainmenu a:hover {background:#DEE7EC; border:1px solid #8CACBB;}
+td#mainmenu a.menuTop {padding-left:8px;}
+td#mainmenu a.menuMain {padding-left:8px;}
+td#mainmenu a.menuSub {padding-left:16px;}
+
+</STYLE>
+
+<TABLE cellspacing="0" >
+<TBODY>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=16">
+<li>國文領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=17">
+<li>英文領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=18">
+<li>數學領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=19">
+<li>自然領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=20">
+<li>社會領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=21">
+<li>健體領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=22">
+<li>藝文領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=23">
+<li>綜合領域</li></A></TD>
+<TR>
+</TR>
+<TD id="mainmenu" ><A  href="http://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbdsn=36">
+<li>科技領域</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A  href="https://www.lsjh.tyc.edu.tw/modules/tad_book3/page.php?tbsn=4&tbdsn=48">
+<li>本土語領域</li></A></TD>
+</TR>
+</TBODY></TABLE>
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興電子相簿" title="龍興電子相簿" align="absmiddle" hspace=2>
+                龍興電子相簿
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <STYLE TYPE="text/css">
+
+td#mainmenu a {margin:0px; padding:3px; border:1px solid #DDDDDD;}
+td#mainmenu a:hover {background:#DEE7EC; border:1px solid #8CACBB;}
+td#mainmenu a.menuTop {padding-left:8px;}
+td#mainmenu a.menuMain {padding-left:8px;}
+td#mainmenu a.menuSub {padding-left:16px;}
+
+
+</STYLE>
+
+<TABLE cellspacing="0" >
+<TBODY>
+<TR>
+<TD id="mainmenu"  ><A  href="https://drive.google.com/drive/folders/0BwKJijmchYDsQzc4dmh6cjd5YTg?resourcekey=0-wP2Y_d1washRoVha5BdbfA&usp=sharing">
+<li>教務處照片</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"  ><A  href="https://drive.google.com/drive/folders/0BwKJijmchYDsMDdaV2YzYlpUMWs?resourcekey=0-ypTVC81AaiT30IWpiuHemA&usp=sharing">
+<li>學務處照片</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu" ><A href="https://drive.google.com/drive/folders/0BwKJijmchYDsRU1fWG5hT2pxYjQ?resourcekey=0-sdpvgfNyBa2mGa7cF7oNuA&usp=sharing">
+<li>總務處照片</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="https://drive.google.com/drive/folders/0BwKJijmchYDsVzJwOUNUeU83X3M?resourcekey=0-cmYXy8Z49tJIuoJaASUhbw&usp=sharing">
+<li>輔導室照片</li></A></TD>
+</TR>
+<TR>
+<TD id="mainmenu"><A  href="https://www.youtube.com/user/tyclsjh/playlists">
+<li>龍興影音頻道</li></A></TD>
+</TR>
+</TBODY></TABLE>
+
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="線上學習資源" title="線上學習資源" align="absmiddle" hspace=2>
+                線上學習資源
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <ul>
+  <li ><a href="https://exam.tcte.edu.tw/tbt_html/">學習扶助科技化評量</a></li>
+           <li ><a href="http://etlady.url.tw/lsjh/">龍興國中英語加油站</a></li>
+             <li ><a href="https://taoyuanetrc.wixsite.com/my-site">桃園市英語教學資源中心</a></li>
+       <li ><a href="http://etlady.tw/tyc/">桃園市國中英語學習網</a></li>
+   <li ><a href="https://www1.inservice.edu.tw/index_login.aspx">全國在職教師進修網</a></li>
+   <li ><a href="https://cloud.edu.tw/">教育雲入口網</a></li>
+ <li ><a href="https://care.tyc.edu.tw/">心靈加油站學生心理關懷平臺</a></li>
+    <li ><a href="https://cirn.moe.edu.tw/">國民中小學課程與教學資源整合平臺</a></li>
+    <li ><a href="http://popmusic.culture.tw/">文化部流行音樂輔助教材</a></li>
+  <li ><a href="https://twbangga.moe.edu.tw">教育部閩南語動畫網</a></li>
+    <li ><a href="https://ups.moe.edu.tw">教師e學院</a></li>
+ 
+     <li ><a href="http://stv.moe.edu.tw/co_edu.php?cat=79451">適性輔導列車系列影片</a></li>
+   	
+	<li ><a href="http://www.coop.ntue.edu.tw/questionnaire.php">分組合作學習問卷</a></li>
+       <li ><a href="http://career.ntnu.edu.tw/a" >八上職涯性向測驗系統</a></li>
+        <li ><a href="https://exam.career.ntnu.edu.tw/cit/index.aspx?AspxAutoDetectCookieSupport=1" >八下興趣測驗系統</a></li>
+   		<li ><a href="http://210.65.11.134/CPS_Assessment/index.php">合作問題解決測驗</a></li>
+<li ><a href="https://sites.google.com/site/cpswebsite2014/">合作問題解決教學資料</a></li>
+	        <li ><a href="http://140.111.34.154/questionnaire">藥物濫用防制檢測</a></li>
+       <li ><a href="http://www.junyiacademy.org/">均一教育平台</a></li>
+       <li ><a href="https://olc2.moe.gov.tw/tepd_olc/index.php">教師專業發展線上學習平台</a></li>
+      <li ><a href="http://teric.naer.edu.tw/">臺灣教育研究資源網</a></li>
+      <li ><a href="http://stv.moe.edu.tw/">愛學網</a></li>
+        <li ><a href="http://newsletter.edu.tw/">中小學師資課程教學與評量協作電子報</a></li>
+        <li ><a href="https://financeknowledge.tabf.org.tw/">金融知識線上競賽</a></li>
+       <li ><a href="https://hakkafa.hakkatv.org.tw/">叁。拾母語-客語資源</a></li>
+      <li ><a href="https://tydec.com.tw/">桃園防災教育館</a></li>
+     <li ><a href="https://www.tfdp.com.tw">消防署消防防災館</a></li>
+    <li ><a href="https://familyedu.moe.gov.tw">家庭教育資源網</a></li>
+    <li ><a href="https://www.ptskids.tw/">公視兒少教育資源網</a></li>
+  <li ><a href="https://educational.eduweb.tw/System/main/Home/index.php">桃園國際城 教育科技遊</a></li>
+ <li ><a href="https://www.youtube.com/watch?v=wS-Q-eqMN78">桃園國際城 教育科技遊註冊教學影片</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="程式作業繳交" title="程式作業繳交" align="absmiddle" hspace=2>
+                程式作業繳交
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <select onchange="window.open(this.options[this.selectedIndex].value)" style="width:140px">
+<option value="https://forms.gle/XR8VXXWv3gWZBm2e8">九年級程式設計</option>
+<option value="https://forms.gle/XR8VXXWv3gWZBm2e8">python繳交作業表單</option>
+</select>
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="資訊教育專區" title="資訊教育專區" align="absmiddle" hspace=2>
+                資訊教育專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <ul>
+<li><a href="https://forms.gle/bZQvim7ybPSmZHMG6">114九年級畢業影片上傳</a></li>
+<li><a href="https://game.tyc.edu.tw/">114桃園市資訊競賽官網</a></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpF6pYOTL7s2z_OGvtT0PUoxI9Dyr2OdMI7zysYWUdrPqVAA/viewform">7年級新生資訊能力調查表</a></li>
+<li><a href="https://isafeevent.moe.edu.tw/">114全民資訊素養評量</a></li>
+<li><a href="http://ai2.appinventor.mit.edu/">App Inventor</a></li>
+<li><a href="https://www.onlinegdb.com/">gdb線上程式設計編輯器</a></li>
+<li><a href="https://168water.blogspot.com/">水哥的資訊課</a></li>
+<li ><a href="https://codecombat.com/">codecombat</a></li>
+<li><a href="http://crazycat.ilc.edu.tw/">2020全國scratch競賽官網</a></li>
+<li><a href="https://drive.google.com/drive/folders/1dWmWbUi2JhKTT5ZMOqsobR_XuYuFVkYe">2020全國scratch競賽軟體下載</a></li>
+<li><a href="http://game.tyc.edu.tw/scratch112/">112桃園市scratch競賽</a></li>
+<li><a href="http://tyckids.ymps.tyc.edu.tw/index.php">小桃子資訊教育推廣徵件網站</a></li>
+<!-- <li><a href="https://docs.google.com/a/lsjh.tyc.edu.tw/forms/d/e/1FAIpQLSc3ZHd4JarDVbj9B2AMUidKYqtTLsVdIt-C1f2FNhkVyjM6Fg/viewform">108網路競賽校內報名</a></li>
+<li><a href="https://forms.gle/t5qDnUaLWGjWmavL7">智慧教室教學問卷</a></li>
+<li><a href="http://game.tyc.edu.tw">108網路競賽官網</a></li>
+<li><a href="https://www.youtube.com/watch?v=TrfZSbNdJvA">scratch動畫組成果報告</a></li>
+<li><a href="http://game.tyc.edu.tw/game107/">107網路競賽作品查詢</a></li>
+<li><a href="http://www.dssh.tyc.edu.tw/~type/webs/index.php?account=admin&mod_area=4">2015中英聽打字競賽</a></li>
+<li><a href="https://youtu.be/D67mMHeofsc?t=670">scratch遊戲成果報告</a></li>
+-->
+<li><a href="http://ile.tp.edu.tw/">new資訊素養與倫理</a></li>
+<li><a href="http://cissnet.edu.tw/safely/">資安防護學園</a></li>
+<li><a href="https://makecode.microbit.org/">micro:bit</a></li>
+<li><a href="https://www.tinkercad.com/">tinkercad</a></li>
+<li><a href="http://code.org/">code.org</a></li>
+<li><a href="https://www.canva.com/">canva視覺設計</a></li>
+<li><a href="https://chatgpt.com/">ChatGPT</a></li>
+<li><a href="https://markmap.js.org/repl">心智圖</a></li>
+<li><a href="https://gamma.app/zh-tw">Gamma簡報設計</a></li>
+ </ul>
+
+
+        </div>
+      </div>
+                <div class="leftBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="空氣品質監測網" title="空氣品質監測網" align="absmiddle" hspace=2>
+                空氣品質監測網
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <iframe src='https://airtw.moenv.gov.tw/AirQuality_APIs/WebWidget.aspx?site=12' width='180' height='300' scrolling='yes'></iframe>
+        </div>
+      </div>
+                      </div>
+            </div>
+
+            <div id="xoops_theme_center_zone" style="background-color: #FFFFFF;float:left;  width:650px;">
+                <a accesskey="C" href="#xoops_theme_center_zone_key" title="中間區域（包含中間區塊及主內容）" id="xoops_theme_center_zone_key" style="color: transparent; font-size: 0.625rem; position: absolute;">:::</a>
+<div id="xoops_theme_center" style="">
+              <div class="centerBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興國中快訊" title="龍興國中快訊" align="absmiddle" hspace=2>
+                龍興國中快訊
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          
+            <div class="news_page_container">
+    <div >
+        <h4 class="my">
+            <a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=20517">
+            賀!!!115學年度龍興國中足球隊參加海峽友誼盃成績耀眼...
+            </a>
+        </h4>
+    </div>
+    <div class="news_page_content">
+                    <div class="row news_page_info">
+                <div class="col-md-6">
+                    <a class='badge' style='background-color: blue; font-weight: normal; color: white; text-shadow:none;' href='https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?tag_sn=1'>公告</a>
+
+                    <span class="news_page_info_text">
+                        <a href="https://www.lsjh.tyc.edu.tw/userinfo.php?uid=1">資訊組</a>
+                        -
+                        <a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?ncsn=9">活動報導</a>
+                        |
+                        2026-08-19
+                        |
+                        點閱數：
+                        157
+                    </span>
+                    
+                </div>
+                <div class="col-md-6 text-right text-end"></div>
+            </div>
+        
+        <div style="margin: 30px;">
+            <a href='https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?ncsn=9&nsn=20517' class='thumbnails' style='width:280px;height:190px;float:left;border:1px solid #e0e0e0;padding: 5px;margin:0px 4px 0px 0px;overflow:hidden;background-size:cover;'><img src='https://www.lsjh.tyc.edu.tw/uploads/tadnews/image/news_pic_20517_1.jpg' alt='news_pic_20517_1.jpg' title='news_pic_20517_1.jpg' style='width: 100%;'></a>
+            <div style='color:gray;font-size:15px;margin-top:3px;line-height:150%;'>&nbsp;
+
+賀!!!115 學年度龍興國中足球隊參加海峽友誼盃成績耀眼：
+
+
+	團體賽-亞軍
+	個人獎 907 陳宥霖獲最佳球員獎。</div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>            <div class="news_page_container">
+    <div >
+        <h4 class="my">
+            <a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=20244">
+            1150610社團成果發表...
+            </a>
+        </h4>
+    </div>
+    <div class="news_page_content">
+                    <div class="row news_page_info">
+                <div class="col-md-6">
+                    
+
+                    <span class="news_page_info_text">
+                        <a href="https://www.lsjh.tyc.edu.tw/userinfo.php?uid=1">資訊組</a>
+                        -
+                        <a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?ncsn=9">活動報導</a>
+                        |
+                        2026-06-11
+                        |
+                        點閱數：
+                        784
+                    </span>
+                    
+                </div>
+                <div class="col-md-6 text-right text-end"></div>
+            </div>
+        
+        <div style="margin: 30px;">
+            <a href='https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?ncsn=9&nsn=20244' class='thumbnails' style='width:280px;height:190px;float:left;border:1px solid #e0e0e0;padding: 5px;margin:0px 4px 0px 0px;overflow:hidden;background-size:cover;'><img src='https://www.lsjh.tyc.edu.tw/uploads/tadnews/image/news_pic_20244_1.jpg' alt='news_pic_20244_1.jpg' title='news_pic_20244_1.jpg' style='width: 100%;'></a>
+            <div style='color:gray;font-size:15px;margin-top:3px;line-height:150%;'>1150610 社團成果發表
+
+&nbsp;
+
+觀看所有照片
+
+觀看實況影片</div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>    
+        </div>
+      </div>
+                <div class="centerBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興最新消息" title="龍興最新消息" align="absmiddle" hspace=2>
+                龍興最新消息
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <script type="text/javascript">
+    $(document).ready(function(){
+            view_contenthfEpvRkC(0);
+
+            $('#ncsnhfEpvRkC').change(function(){
+                view_contenthfEpvRkC(0);
+            })
+
+            $('#tag_snhfEpvRkC').change(function(){
+                view_contenthfEpvRkC(0);
+            })
+            $('#keywordhfEpvRkC').change(function(){
+                view_contenthfEpvRkC(0);
+            })
+            $('#start_dayhfEpvRkC').focusout(function(){
+                view_contenthfEpvRkC(0);
+            })
+            $('#end_dayhfEpvRkC').focusout(function(){
+                view_contenthfEpvRkC(0);
+            })
+    });
+
+    function view_contenthfEpvRkC(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_table_content.php", {
+            num: "10",
+            p: p ,
+            show_button:"1",
+            "cell[]": [
+                "start_day",
+                "news_title",
+                "uid",
+                "hide",
+                "hide"
+            ],
+            start_from:"0",
+            show_ncsn: "1,2,3,10,4,5,6,7,8",
+            randStr:"hfEpvRkC",
+            ncsn:$("#ncsnhfEpvRkC").val(),
+            tag_sn:$("#tag_snhfEpvRkC").val(),
+            keyword:$("#keywordhfEpvRkC").val(),
+            start_day:$("#start_dayhfEpvRkC").val(),
+            end_day:$("#end_dayhfEpvRkC").val()
+        }, function(data) {
+            $('#msg_resultshfEpvRkC').html(data);
+        });
+
+        }
+
+</script>
+
+
+<div id="msg_resultshfEpvRkC">
+    新聞載入中，請稍後...
+</div>
+
+        </div>
+      </div>
+                <div class="centerBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="校外榮譽榜" title="校外榮譽榜" align="absmiddle" hspace=2>
+                校外榮譽榜
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <script type="text/javascript">
+    $(document).ready(function(){
+            view_contentJxjFlzAW(0);
+
+            $('#ncsnJxjFlzAW').change(function(){
+                view_contentJxjFlzAW(0);
+            })
+
+            $('#tag_snJxjFlzAW').change(function(){
+                view_contentJxjFlzAW(0);
+            })
+            $('#keywordJxjFlzAW').change(function(){
+                view_contentJxjFlzAW(0);
+            })
+            $('#start_dayJxjFlzAW').focusout(function(){
+                view_contentJxjFlzAW(0);
+            })
+            $('#end_dayJxjFlzAW').focusout(function(){
+                view_contentJxjFlzAW(0);
+            })
+    });
+
+    function view_contentJxjFlzAW(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_table_content.php", {
+            num: "5",
+            p: p ,
+            show_button:"1",
+            "cell[]": [
+                "start_day",
+                "news_title",
+                "counter",
+                "hide",
+                "hide"
+            ],
+            start_from:"0",
+            show_ncsn: "10",
+            randStr:"JxjFlzAW",
+            ncsn:$("#ncsnJxjFlzAW").val(),
+            tag_sn:$("#tag_snJxjFlzAW").val(),
+            keyword:$("#keywordJxjFlzAW").val(),
+            start_day:$("#start_dayJxjFlzAW").val(),
+            end_day:$("#end_dayJxjFlzAW").val()
+        }, function(data) {
+            $('#msg_resultsJxjFlzAW').html(data);
+        });
+
+        }
+
+</script>
+
+
+<div id="msg_resultsJxjFlzAW">
+    新聞載入中，請稍後...
+</div>
+
+        </div>
+      </div>
+                <div class="centerBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興分類消息" title="龍興分類消息" align="absmiddle" hspace=2>
+                龍興分類消息
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <div class="shadetabs-menu" id="tabscontents-1418656067"><ul class="tabs-nav"><li><a href="#" rel="tab-2-1418656067"class="tabs-selected"><span>重要訊息</span></a></li><li><a href="#" rel="tab-3-1418656067"><span>一般公告</span></a></li><li><a href="#" rel="tab-4-1418656067"><span>研習進修</span></a></li><li><a href="#" rel="tab-5-1418656067"><span>校內榮譽榜</span></a></li><li><a href="#" rel="tab-6-1418656067"><span>競賽資訊</span></a></li><li><a href="#" rel="tab-7-1418656067"><span>獎助學金</span></a></li><li><a href="#" rel="tab-8-1418656067"><span>政令宣導</span></a></li><li><a href="#" rel="tab-9-1418656067"><span>升學資訊</span></a></li></ul><br style="clear: left" /></div>
+
+  <div class="shadetabs-content" id="tab-2-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentR1cQckkw(0);
+            });
+
+
+    function tadnew_list_contentR1cQckkw(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"R1cQckkw" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "1" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnR1cQckkw").val(),
+            tag_sn:$("#tag_snR1cQckkw").val(),
+            keyword:$("#keywordR1cQckkw").val(),
+            start_day:$("#start_dayR1cQckkw").val(),
+            end_day:$("#end_dayR1cQckkw").val()
+        }, function(data) {
+            $('#tadnew_list_contentR1cQckkw').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentR1cQckkw">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-3-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentCyXZPmb8(0);
+            });
+
+
+    function tadnew_list_contentCyXZPmb8(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"CyXZPmb8" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "2" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnCyXZPmb8").val(),
+            tag_sn:$("#tag_snCyXZPmb8").val(),
+            keyword:$("#keywordCyXZPmb8").val(),
+            start_day:$("#start_dayCyXZPmb8").val(),
+            end_day:$("#end_dayCyXZPmb8").val()
+        }, function(data) {
+            $('#tadnew_list_contentCyXZPmb8').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentCyXZPmb8">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-4-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contenttF8f9ySr(0);
+            });
+
+
+    function tadnew_list_contenttF8f9ySr(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"tF8f9ySr" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "3" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsntF8f9ySr").val(),
+            tag_sn:$("#tag_sntF8f9ySr").val(),
+            keyword:$("#keywordtF8f9ySr").val(),
+            start_day:$("#start_daytF8f9ySr").val(),
+            end_day:$("#end_daytF8f9ySr").val()
+        }, function(data) {
+            $('#tadnew_list_contenttF8f9ySr').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contenttF8f9ySr">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-5-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentsP2QQIPI(0);
+            });
+
+
+    function tadnew_list_contentsP2QQIPI(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"sP2QQIPI" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "4" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnsP2QQIPI").val(),
+            tag_sn:$("#tag_snsP2QQIPI").val(),
+            keyword:$("#keywordsP2QQIPI").val(),
+            start_day:$("#start_daysP2QQIPI").val(),
+            end_day:$("#end_daysP2QQIPI").val()
+        }, function(data) {
+            $('#tadnew_list_contentsP2QQIPI').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentsP2QQIPI">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-6-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentqOVk0NA6(0);
+            });
+
+
+    function tadnew_list_contentqOVk0NA6(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"qOVk0NA6" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "5" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnqOVk0NA6").val(),
+            tag_sn:$("#tag_snqOVk0NA6").val(),
+            keyword:$("#keywordqOVk0NA6").val(),
+            start_day:$("#start_dayqOVk0NA6").val(),
+            end_day:$("#end_dayqOVk0NA6").val()
+        }, function(data) {
+            $('#tadnew_list_contentqOVk0NA6').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentqOVk0NA6">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-7-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentUoPfjnbF(0);
+            });
+
+
+    function tadnew_list_contentUoPfjnbF(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"UoPfjnbF" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "6" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnUoPfjnbF").val(),
+            tag_sn:$("#tag_snUoPfjnbF").val(),
+            keyword:$("#keywordUoPfjnbF").val(),
+            start_day:$("#start_dayUoPfjnbF").val(),
+            end_day:$("#end_dayUoPfjnbF").val()
+        }, function(data) {
+            $('#tadnew_list_contentUoPfjnbF').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentUoPfjnbF">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-8-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentOpcd4eDM(0);
+            });
+
+
+    function tadnew_list_contentOpcd4eDM(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"Opcd4eDM" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "7" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnOpcd4eDM").val(),
+            tag_sn:$("#tag_snOpcd4eDM").val(),
+            keyword:$("#keywordOpcd4eDM").val(),
+            start_day:$("#start_dayOpcd4eDM").val(),
+            end_day:$("#end_dayOpcd4eDM").val()
+        }, function(data) {
+            $('#tadnew_list_contentOpcd4eDM').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentOpcd4eDM">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+  <div class="shadetabs-content" id="tab-9-1418656067" style="overflow: auto;">
+    <table cellspacing="0">
+      <tr>
+                                      <td style="width:100%; padding: 5px; vertical-align: top;">
+                          <div class="shadetabs-block">
+                                <div class="shadetabs-blockcontent"><script type="text/javascript">
+    $(document).ready(function(){
+        tadnew_list_contentGOXdhAD7(0);
+            });
+
+
+    function tadnew_list_contentGOXdhAD7(p){
+        $.post("https://www.lsjh.tyc.edu.tw/modules/tadnews/ajax_list_content.php", {
+            randStr:"GOXdhAD7" ,
+            num: "10",
+            p: p ,
+            summary_length:"0" ,
+            summary_css:"color:gray;font-size:11px;margin-top:3px;line-height:150%;" ,
+            title_length:"0" ,
+            show_cover:"0" ,
+            cover_css:"width:60px;height:30px;float:left;border:0px solid #9999CC;margin:0px 4px 4px 0px;overflow:hidden;background-size:cover;",
+            start_from:"0",
+            show_ncsn: "8" ,
+            display_mode: "table",
+            show_button:"1",
+            ncsn:$("#ncsnGOXdhAD7").val(),
+            tag_sn:$("#tag_snGOXdhAD7").val(),
+            keyword:$("#keywordGOXdhAD7").val(),
+            start_day:$("#start_dayGOXdhAD7").val(),
+            end_day:$("#end_dayGOXdhAD7").val()
+        }, function(data) {
+            $('#tadnew_list_contentGOXdhAD7').html(data);
+        });
+    }
+
+</script>
+
+<div id="tadnew_list_contentGOXdhAD7">新聞載入中，請稍後...</div></div>
+              </div>
+                      </td>
+                                  </tr>
+    </table>
+  </div>
+
+<script type="text/javascript">
+var tabc_1418656067=new ddtabcontent("tabscontents-1418656067")
+tabc_1418656067.setpersist(true)
+tabc_1418656067.hidetabs(false)
+tabc_1418656067.setonmouseover(0)
+tabc_1418656067.setselectedClassTarget("link")
+tabc_1418656067.init(0)
+</script>
+        </div>
+      </div>
+                <div class="centerBlock">
+            <div>
+            </div>
+        <div class="blockContent" style="clear:both;">
+          <iframe src="https://www.google.com/calendar/embed?src=lsjh.tyc.edu.tw_kq22ue63gs7ao1bbjpkubp3df8%40group.calendar.google.com&ctz=Asia/Taipei" 
+style="border: 0" width="680" height="480" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+                <div class="centerBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="宣導網站" title="宣導網站" align="absmiddle" hspace=2>
+                宣導網站
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <div class="blockContent">
+<img src="https://www.lsjh.tyc.edu.tw/uploads/tel.jpg" width="125" height="60">
+<a href="https://www.edusave.edu.tw/donate/caseDetail/f8ff1bad8dc5cf17018f37f9898b5c93"><img src="https://www.lsjh.tyc.edu.tw/uploads/tadnews/image/blog_label.gif" width="125" height="60" border="0"></a>
+<a href="https://enc.moe.edu.tw/"><img src="https://www.lsjh.tyc.edu.tw/uploads/flower.png" width="125" height="60" border="0"></a>
+<a href="https://www.energylabel.org.tw/index.asp"><img src="https://www.lsjh.tyc.edu.tw/uploads/energylabel.gif" width="125" height="60" border="0"></a>
+<a href="https://greenliving.epa.gov.tw/"><img src="https://www.lsjh.tyc.edu.tw/uploads/green-banner.jpg" width="125" height="60" border="0"></a>
+<a href="https://ecolife.epa.gov.tw/Cooler/default.aspx"><img src="https://www.lsjh.tyc.edu.tw/uploads/100_40_3.gif" width="125" height="60" border="0"></a>
+<a href="https://www.epa.gov.tw/"><img src="https://www.lsjh.tyc.edu.tw/uploads/epa-banner_2.jpg" width="125" height="60" border="0"></a>
+<a href="https://ecare.mohw.gov.tw/"><img src="https://www.lsjh.tyc.edu.tw/uploads/113.gif" width="125" height="60" border="0"></a>
+<a href="https://www.tycg.gov.tw/site/site_index.aspx?site_id=037&site_content_sn=15218"><img src="https://www.lsjh.tyc.edu.tw/uploads/youth.gif" width="125" height="60" border="0"></a>
+<a href="https://www.win.org.tw/iwin/"><img src="https://www.lsjh.tyc.edu.tw/uploads/net_e.jpg" width="125" height="60" border="0"></a>
+<a href="https://www.tychb.gov.tw/weight/"><img src="https://www.lsjh.tyc.edu.tw/uploads/333banner.jpg" width="125" height="60" border="0"></a>
+<a href="https://isafe.moe.edu.tw/"><img src="https://www.lsjh.tyc.edu.tw/uploads/news-qwknewuqam.jpg" width="125" height="60" border="0"></a>
+<a href="https://www.e-quit.org/CustomPage/HtmlEditorPage.aspx?MId=957&ML=3"><img src="https://www.e-quit.org/images/logo2.png" width="125" height="60" border="0"></a>
+<a href="https://www.gamerating.org.tw"><img src="https://www.lsjh.tyc.edu.tw/uploads/game.gif" width="125" height="60" border="0"></a>
+<a href="https://www.run99.org/index.php"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/9/run2016.jpg" width="125" height="60" border="0"></a>
+<a href="https://www.humanrights.moj.gov.tw/mp200.html"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/19/mp200.jpg" width="125" height="60" border="0"></a>
+<a href="https://www.2017twccprcescr.tw/index.html"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/21/twccprcescr.JPG" width="125" height="60" border="0"></a>
+<a href="https://crc.sfaa.gov.tw/news_c.php?id=50"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/33/crc.jpg" width="125" height="60" border="0"></a>
+<a href="https://www.facebook.com/tycgsw/"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/34/tycgsw.png" width="125" height="60" border="0"></a>
+</div>
+
+
+
+
+        </div>
+      </div>
+        <div class="row">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6"></div>
+  </div>
+
+  
+  
+  <div class="row">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6"></div>
+  </div>
+</div>            </div>
+
+            <div id="xoops_theme_right_zone" style="float:right; background-color:#F4F4F4;">
+                <div id="xoops_theme_right"  style="float:right;  width:180px;">
+                    <a accesskey="R" href="#xoops_theme_right_zone_key" title="右邊區域（視佈景版型不同可能包含左右兩側之區塊）" id="xoops_theme_right_zone_key" style="color: transparent; font-size: 0.625rem; position: absolute;">:::</a>
+                    	          <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興國中fb專頁" title="龍興國中fb專頁" align="absmiddle" hspace=2>
+                龍興國中fb專頁
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <ul>
+<li><a href="https://www.facebook.com/groups/929753397105244/">龍興國中點點滴滴</a></li>
+</ul>
+<!--
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=970562549941933&autoLogAppEvents=1"></script>
+<div class="fb-group" data-href="https://www.facebook.com/groups/929753397105244/" data-width="165" data-show-social-context="false" data-show-metadata="false"></div>
+ -->
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興創造力資優班專區" title="龍興創造力資優班專區" align="absmiddle" hspace=2>
+                龍興創造力資優班專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+<li><a href="https://meet.google.com/ztz-yajr-zqd">創造力資優鑑定家長說明會(google meet)</a></li>
+<a href="https://meet.google.com/ztz-yajr-zqd"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/127/0114creative.png"></a>
+<li><a href="https://meet.google.com/xgp-ergy-vbw">0211龍興分區講座線上會議(google meet)</a></li>
+-->
+</style>
+<ul>
+<a href="https://sites.google.com/lsjh.tyc.edu.tw/creativity/115%E5%89%B5%E9%80%A0%E5%8A%9B%E8%B3%87%E5%84%AA%E9%91%91%E5%AE%9A%E5%B0%88%E5%8D%80?authuser=0" title="115創造力資優鑑定專網"><img src="https://www.lsjh.tyc.edu.tw/uploads/tadnews/image/1115creative.png" width="130" ></a>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/creativity/">龍興國中創造力資優班專網</a></li>
+
+</ul>
+
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="114教學正常化訪視專區" title="114教學正常化訪視專區" align="absmiddle" hspace=2>
+                114教學正常化訪視專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+-->
+</style>
+<ul>
+<li><a href="https://drive.google.com/file/d/12YuIPj8j1PguQ8EytM6q6bPsavdnEoqZ/view">114教學正常化訪視自評表</a>
+<li><a href="https://drive.google.com/file/d/1rNYkQpJr40v7lfzLM_GFbg34IRdJmtZ-/view?usp=sharing">113教學正常化訪視自評表</a></li>
+<li><a href="https://drive.google.com/file/d/19P5e9kLAexNqdsClkYd4Z8xcLu5XGhkU/view?usp=sharing">教學正常化訪視相關佐證資料</a></li>
+</ul>
+
+
+
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="升學資訊專區" title="升學資訊專區" align="absmiddle" hspace=2>
+                升學資訊專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+-->
+</style>
+<ul>
+<li><a href="https://tyc.entry.edu.tw/NoExamImitate_TL/NoExamImitate/Apps/Page/Public/News.aspx"><font color="blue"><b><u>115桃連區高中職免試入學平台</u></b></font></a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/newstu/"><font color="blue"><b><u>龍興國中新生入學網</u></b></font></a></li>
+<a href="https://sites.google.com/lsjh.tyc.edu.tw/newstu/" title="龍興國中新生入學網"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/129/111newstu.png" width="130" ></a>
+<li>若有任何疑問請洽：4575200#212註冊組</li>
+
+
+ </ul>
+<!--
+<li><a href="http://cap.ntnu.edu.tw">國中教育會考網</a></li>
+<li><a href="http://expo.tyc.edu.tw">104桃園縣高中職博覽會</a></li>
+<a href="http://www.youtube.com/watch?v=TeSvz23ALgE"  target="_blank"><img align=left width=150 src='http://163.26.135.1/web/uploads/images/promotion_movie.png'>成就每一位孩子</a> <br />
+<li><a href="https://drive.google.com/folderview?id=0B-ROx-ynDKhhbDVKVFZCbDNoRW8&usp=sharing
+">會考、志願選填試探與輔導宣導資料</a></li>
+<li><a href="http://www.bctest.ntnu.edu.tw/">基本學力測驗推動工作委員會</a></li>
+<li><a href="https://12basic.edu.tw/">108課綱資訊網</a></li>
+<li><a href="http://12basic.tyc.edu.tw/">桃園十二年國教資訊網</a></li>
+
+<a href="https://sites.google.com/lsjh.tyc.edu.tw/newstu/" title="龍興國中新生入學網"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/129/111newstu.png" width="150" ></a>
+<li>若有任何疑問請洽：4575200#212註冊組</li>
+
+-->
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="語文競賽專區" title="語文競賽專區" align="absmiddle" hspace=2>
+                語文競賽專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          
+<ul>
+<li><a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=13721">題目及語音檔下載</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="AILEAD線上學習平台" title="AILEAD線上學習平台" align="absmiddle" hspace=2>
+                AILEAD線上學習平台
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <a href="https://lsjhtyc.ailead365.com/auth/login" title="AILEAD線上學習網"><img src="https://www.lsjh.tyc.edu.tw/uploads/tadnews/image/AILEAD.jpg" width="160" ></a>
+<ul>
+<li><a href="https://youtu.be/eTpssOyviU4?si=w-kU15IPSHa8_x7a">教師操作說明</a></li>
+<li><a href="https://youtu.be/BMvBKnkbPfA?si=vo47q1szIf1UnnEs">學生操作說明</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="數位學習專區" title="數位學習專區" align="absmiddle" hspace=2>
+                數位學習專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+<li><a href="https://drive.google.com/drive/folders/1aLGblJg7zUsjWD4raDbuZ5gMib8zyFYU"><font color="red">因材網線上共備講義與影片下載</font></a></li>
+<li><a href="http://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=9191"><font color="red">龍興國中居家學習演練通知</font></a></li>
+<li><a href="https://forms.gle/2m9sxpMBBjhfJiUa9"><font color="red">龍興國中居家學習演練結果登錄表單</font></a></li>
+<a href="https://sites.google.com/lsjh.tyc.edu.tw/elearning/%E7%B7%9A%E4%B8%8A%E7%8F%AD%E8%A6%AA%E6%9C%83?authuser=0"><img src="http://www.lsjh.tyc.edu.tw/uploads/tad_uploader/tmp/124/110parents.jpg"  width="150"></a>
+<li><a href="https://drive.google.com/file/d/1xtcIqjToUMWKAPRf3__UX3yNXMNARcHp/view?usp=sharing"><font color="red">學習吧教師簡易手冊</font></a></li>
+<li><a href="https://drive.google.com/file/d/18FNT3lTDK22A2KqVXk_UK_2SVWnjUKm_/view?usp=sharing"><font color="red">學習吧學生簡易手冊</font></a></li>
+<li><a href="https://video.cloud.edu.tw/video/co_topic_2.php?cat=18">教育雲線上看</a></li>
+<li><a href="https://www.ptsplus.tv/channel/20">公視防疫不停學OTT影音平台</a></li>
+<li><a href="https://cooc.tp.edu.tw/">酷課雲</a></li>
+<li><a href="https://www.ehanlin.com.tw/event/homeprotect/">翰林防疫自學網</a></li>
+<li><a href="http://student.oneclass.com.tw/">南一防疫自學網</a></li>
+<li><a href="http://qrcode.knsh.com.tw/r.asp?QID=MV79U">康軒防疫自學網</a></li>
+<li><a href="https://www.junyiacademy.org/isc/root/iscjm">均一教育scratch</a></li>
+-->
+
+</style>
+<a href="https://elearning.teachersay.tw/taoyuan" title="桃園市政府數位軟體入口網"><img src="https://www.lsjh.tyc.edu.tw/uploads/tad_book3/image/padlet.png" width="150" ></a>
+<br>
+<center><a href="https://drive.google.com/file/d/1uvYUXMyATpYo3ttXMsKPRiz245pQaJWw/view?usp=sharing"><b><u>操作手冊及客服</u></b></a></center>
+<ul>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/elearning/"><font color="blue"><b><u>龍興國中數位學習專網</u></b></font></a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/elearning/%E7%8F%AD%E7%B4%9Agoogle-classroom?authuser=0"><font color="blue"><b><u>各班google classroom</u></b></font></a></li>
+<li><a href="https://moocs.moe.edu.tw/">教育部模課師網站</a></li>
+<li><a href="https://www.learnmode.net/"><img src="https://www.learnmode.net/upload/home/logo.png"  width="80"></a></li>
+<li><a href="https://cloud.edu.tw/">教育部數位學習入口網</a></li>
+<li><a href="http://smartlearningbar.tyc.edu.tw/iPrepare/index">桃園智學吧</a></li>
+<li><a href="https://adl.edu.tw/HomePage/home/">因材網</a></li>
+<li><a href="https://www.tyc.edu.tw/cp.aspx?n=5233">桃園市學生學習資源網</a></li>
+<li><a href="https://etlady.tw/tyc/">桃園市國中英語學習網</a></li>
+<li><a href="https://www.pagamo.org/">pagamo</a></li>
+<li><a href="https://www.sso.edu.tw/">教育雲單一簽入服務</a></li>
+<li><a href="https://go.k12cc.tw/Google_For_Education.pdf">教育雲google帳號</a></li>
+<li><a href="http://o365.k12cc.tw/">微軟office365教育版</a></li>
+</ul>
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興國中閱讀專區" title="龍興國中閱讀專區" align="absmiddle" hspace=2>
+                龍興國中閱讀專區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <ul>
+<li><a href="https://drive.google.com/file/d/1fpLgySbwkJnTikxBWLV-jJo5b-1hFWSC/view?usp=sharing">龍興閱讀磐石計畫</a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/read-new">龍興國中閱讀專網</a></li>
+<li><a href="https://reading.cw.com.tw/">天下雜誌希望閱讀</a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/padlet">龍興國中padlet閱讀網</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1NeT2mgtkQMC2zPqlAD5ihfxjq174C4ZI/edit?usp=sharing&ouid=103281961666506136258&rtpof=true&sd=true">龍興經典閱讀100</a></li>
+<li><a href="https://drive.google.com/file/d/1hBjp6APPPnpzGxv1uuVTJLoGYNJm4Qhx/view?usp=sharing">本校圖書館書籍搜尋指示</a></li>
+<li><a href="http://163.30.179.11/"target="_blank">閱讀新桃園</a></li>
+<li><a href="http://sunology.culture.tw/">中山學術資料庫</a></li>
+<li><a href="https://lib.ebookservice.tw/ty/">台灣雲端書庫</a></li>
+<li><a href="https://nclibtv.ncl.edu.tw/web/index.php">NCLibTV國圖到你家</a></li>
+</ul>
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興影音頻道" title="龍興影音頻道" align="absmiddle" hspace=2>
+                龍興影音頻道
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <center><iframe width="140" height="200" src="https://www.youtube.com/embed/KcnIRMibQzg?list=PLcxn5IwRSLhaiSy9IOCppRpr4Xlx4QXZZ" frameborder="0"  allowfullscreen></iframe>
+</center>
+<p align="left">
+<a href="https://www.youtube.com/channel/UCvXJJ8YKLTWxhH25y-TxtYg/playlists">觀看更多影片</a><br>
+<a href="https://www.youtube.com/watch?v=8OJfX758Pc4&feature=youtu.be">●我的午餐有心機</a><br>
+<a href="https://fatraceschool.k12ea.gov.tw/frontend/index.html">●教育部校園食材登錄平臺2.0(每日菜單)</a>
+</p>
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興課程計畫區" title="龍興課程計畫區" align="absmiddle" hspace=2>
+                龍興課程計畫區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+-->
+</style>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1NWmtkCOviglMaNlNp0Pualomi_1nRA4I">115龍興課程計畫相關文件</a></li>
+<li><a href="https://drive.google.com/drive/folders/1UajgQ3Rf-ZvrnJY5C-q3fuGJ4SBzCVje">114龍興課程計畫相關文件</a></li>
+<li><a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=17935">113下-公開授課時間表</a></li>
+<li><a href="https://drive.google.com/drive/folders/1-jN7XMW8Vho3rJgbYi_rs_4IDxe0FHbw">112龍興課程計畫相關文件</a></li>
+
+<li><a href="https://drive.google.com/drive/folders/1KjGKyWg1mf3Z5o_BJt6nHrdmTe4fn8Tv?usp=sharing">111龍興課程計畫相關文件</a></li>
+<li><a href="https://drive.google.com/drive/u/1/folders/1a2zgvsBooRuIkAc2AgzmK_aTFYQfSxeu">110龍興課程計畫相關文件</a></li>
+<li><a href="https://drive.google.com/drive/folders/1V1Zw4LHFRy8DwWHNIuUETkLB6XqRnDAk?usp=sharing">109龍興課程計畫相關文件</a></li>
+
+</ul>
+
+
+<!--
+<a href="https://drive.google.com/drive/folders/1UWmhrGuTvdk0VxtJG02H6jfmB4RzZLMr">108龍興課程計畫相關文件</a>
+<li><a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=15678">112下-公開授課時間表</a></li>
+-->
+
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="政令宣導問卷網" title="政令宣導問卷網" align="absmiddle" hspace=2>
+                政令宣導問卷網
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <select onchange="window.open(this.options[this.selectedIndex].value)" style="width:140px">
+<option value="http://163.30.124.150">政令宣導及問卷網</option>
+<option value="https://www.surveycake.com/s/M8Apl">親子天下雜誌問卷</option>
+<option value="https://docs.google.com/forms/d/e/1FAIpQLSdQbZeAeDVwEL7qt6GYAaNWd8j38DHI-iKKBMgYUGrDo9Crig/viewform">HPV疫苗衛教問卷</option>
+<option value="https://forms.gle/gUTYtb1ZwsZmxzyM8">桃園市114年友善校園人權環境問卷</option>
+<option value="https://saaassessment.ntcu.edu.tw/">113新生學力測驗問卷網</option>
+<option value="https://docs.google.com/forms/d/e/1FAIpQLSfjI8YB_CM6eKEW5JZmYidrc74PBUFMgv1EyvnTnzk6s8_KOw/viewform">心情溫度計(BSRS-5)擴大檢測</option>
+<option value="http://web.pts.org.tw/php/event/livehouse.in/ ">網路成癮量表</option>
+<option value="https://drive.google.com/file/d/1AMthssmopph2LFLVxZgA1o2dEsHilfyg/view">HPV疫苗衛教影片</option>
+<option value="https://tilssc.naer.edu.tw/team/iccs2022/">ICCS國家研究中心</option>
+<option value="https://iccs.sonet.com.au/engine/index.php/lms/login/path/ft2022_zh-TW">IEA國際公民教育素養問卷</option>
+<option value="https://adl.edu.tw/questionnaire/open/srl">學生自主學習量表</option>
+<option value="https://olive.ntpu.edu.tw/s2021">防治校園霸凌問卷網</option>
+<option value="https://www.surveycake.com/s/m8D8K">兩班三組適性問卷</option>
+<option value="http://learning.swcb.gov.tw/">水土保持與農村再生教育網</option>
+<option value="https://newsnc.moe.edu.tw/survey/">藥物濫用防制問卷</option>
+<option value="https://cloud.edu.tw/curation/curation/detail/449;jsessionid=325259ADBE4A5E6561F11C11C8C36DF4">教育雲闖關遊戲</option>
+<option value="http://246.swcb.gov.tw/">土石流防災資訊網</option>
+<option value="http://rural.swcb.gov.tw/">農村風情網</option>
+<option value="http://crc.sfaa.gov.tw/">CRC兒童權利公約</option>
+<option value="https://ques.cher.ntnu.edu.tw/junior_orient_jr2">國中學生就讀意願調查表</option>
+<option value="https://reurl.cc/GmMWYG">內政部警政署防空疏散宣導</option>
+<option value="https://reurl.cc/pgQORQ">桃園市警局防空疏散宣導</option>
+<option value="https://reurl.cc/moEQo1 ">全民國防手冊專區</option>
+</select>
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="校內搜尋" title="校內搜尋" align="absmiddle" hspace=2>
+                校內搜尋
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          
+<div class="text-center">
+    <form role="search" action="https://www.lsjh.tyc.edu.tw/search.php" method="get">
+        <div class="input-group">
+            <input class="form-control" type="text" name="query" title="search" placeholder="請輸入關鍵字">
+            <input type="hidden" name="action" value="results">
+            <div class="input-group-append">
+                <button class="btn btn-info" type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">search</span></button>
+            </div>
+        </div>
+    </form>
+
+    <p class="text-right">
+        <a href="https://www.lsjh.tyc.edu.tw/search.php" title="進階搜尋">
+            進階搜尋
+        </a>
+    </p>
+</div>
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="國立公共資訊圖書館" title="國立公共資訊圖書館" align="absmiddle" hspace=2>
+                國立公共資訊圖書館
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <select onchange="window.open(this.options[this.selectedIndex].value)" style="width:140px">
+<option value="http://ebook.nlpi.edu.tw">電子書服務平台</option>
+<option value="http://storybook.nlpi.edu.tw">圓夢繪本資料庫</option>
+<option value="http://libdna.nlpi.edu.tw">解密圖書DNA</option>
+<option value="http://digitalgallery.nlpi.edu.tw">設計師之手</option>
+<option value="http://fl.nlpi.edu.tw">電影與文學資料庫</option>
+<option value="http://das.nlpi.edu.tw">數位典藏服務網</option>
+<option value="http://earp.nlpi.edu.tw">數位典藏教材推廣網頁</option>
+</select>
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興志工服務區" title="龍興志工服務區" align="absmiddle" hspace=2>
+                龍興志工服務區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+-->
+</style>
+<ul>
+<li><a href="http://163.30.124.150/teacher/index.php?blogId=113">龍興國中家長志工團</a></li>
+<li><a href="https://drive.google.com/folderview?id=0BzhLEmrV2VmEVXFCRzgtR24yOFk&usp=sharing">桃園縣志工服務學習手冊</a></li>
+<li><a href="http://vspc.tycg.gov.tw/">志工桃園全球資訊網</a></li>
+<li><a href="https://drive.google.com/folderview?id=0B-ROx-ynDKhhcWJ1ZUpYdXhybHc&usp=sharing">桃園縣志工服務相關資料</a></li>
+</ul>
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="訪視評鑑宣導區" title="訪視評鑑宣導區" align="absmiddle" hspace=2>
+                訪視評鑑宣導區
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <style type="text/css">
+<!--
+.style1 {
+	color: #999999;
+	font-style: italic;
+}
+
+-->
+</style>
+<ul>
+<li><a href="http://163.21.246.57/classvisitor_web/">教室走察專案</a></li>
+<li><a href="http://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=4922">暑假防溺宣導</a></li>
+<!-- <li><a href="http://163.30.124.150/teacher/index.php?op=Default&postCategoryId=203&blogId=119">龍興替代役評鑑網</a></li> -->
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/environment/">112學年度永續發展與環境教育評鑑網</a></li>
+<!--
+<li><a href="https://sites.google.com/a/lsjh.tyc.edu.tw/environment/">108永續校園評鑑網</a></li>
+<li><a href="https://sites.google.com/a/lsjh.tyc.edu.tw/trafficsafety/">交通安全教育評鑑網</a></li>
+-->
+<li><a href="https://hps.tyc.edu.tw/upload-view.aspx?openExternalBrowser=1&ids=7FE3911BC99E521B98FAE80199D1537CB3905FD247A63A37869A5EEA54CE399169BA75839B9BE19E37A5E410F8E6F0E9#top1">112學年度健康促進訪視網</a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/healthy/">111學年度健康促進學校網</a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/traffic/">交通安全教育評鑑網</a></li>
+
+<li><a href="https://drive.google.com/a/lsjh.tyc.edu.tw/file/d/0B-ROx-ynDKhhLXFiVUNQVEZ3SVk/view">105防災計畫教育評鑑</a></li>
+<li><a href="https://docs.google.com/a/lsjh.tyc.edu.tw/viewer?a=v&pid=sites&srcid=bHNqaC50eWMuZWR1LnR3fHRyYWZmaWNzYWZldHl8Z3g6Mjc3MzJmY2Y1YjdkMjgwMg">107交通安全教育評鑑</a></li>
+<li><a href="https://drive.google.com/a/lsjh.tyc.edu.tw/folderview?id=0B2Hd9DDF0cKaMmZwQ1NmNkp5dzg&usp=sharing#">生涯發展教育評鑑</a></li>
+<li><a href="https://drive.google.com/drive/folders/1UWmhrGuTvdk0VxtJG02H6jfmB4RzZLMr">108總體課程計畫</a></li>
+<!-- <li><a href="http://163.30.124.150/teacher/index.php?blogId=114">學生午餐資訊網</a></li> -->
+<li><a href="https://mhi.moe.edu.tw/">本土語言資訊網</a></li>
+<li><a href="http://lsjh-law.blogspot.com/">人權法治教育網</a></li>
+<li><a href="https://sites.google.com/lsjh.tyc.edu.tw/gender/">龍興性別平等教育網站</a></li>
+<!-- <li><a href="http://163.30.124.150/xoops/uploads/101sex.doc">龍興校園性侵害防治規定</a></li> -->
+<!-- <li><a href="http://163.30.124.150/teacher/index.php?blogId=126">龍興品格之星專網</a></li> -->
+<li><a href="http://www.ienet.net.tw/DashboardManager/flash/Dashboard.html?id=1341
+">即時用電看板</a></li>
+<li><a href="https://www.edusave.edu.tw/school/school_index.aspx?school_sn=3282
+">龍興教育儲蓄專戶</a></li>
+
+</ul>
+
+
+        </div>
+      </div>
+                <div class="rightBlock">
+        
+            <h3 class="blockTitle">
+            
+                            <img src="https://www.lsjh.tyc.edu.tw/themes/school2014/images/arrow_right.png" alt="龍興公開資訊" title="龍興公開資訊" align="absmiddle" hspace=2>
+                龍興公開資訊
+                    </h3>
+            <div class="blockContent" style="clear:both;">
+          <ul>
+<li><a href="https://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=15566">龍興國中性別歧視防治及申訴管道</a></li>
+<li><a href="https://drive.google.com/folderview?id=0B-ROx-ynDKhhbWNoOWRlUHdONGs&usp=sharing">龍興國中場地借用辦法</a></li>
+<li><a href="https://drive.google.com/drive/folders/1G3X5KlL4_QBQ0KmNyVGv4efMJaIJbfzn?usp=sharing">龍興國中校外人士協助教學或活動要點</a></li>
+<li><a href="https://drive.google.com/file/d/1PC_u8_efGgTStowWRRWZUZb4zjCCf1u7/view?usp=sharing">108桃園市自然領域領綱宣講資料</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+                      </div>
+            </div>
+        
+    
+    <div style="clear: both;"></div>
+</div>
+
+              <!-- 頁尾 -->
+                              <style>
+                  #xoops_theme_footer a,#xoops_theme_footer a:hover,#xoops_theme_footer a:active ,#xoops_theme_footer a:visited {
+                    color:#FFFFFF;
+                  }
+                </style>
+                <div id="xoops_theme_footer"  style="clear:both;margin-bottom:5px;height:180px;background:#0090d6 url(https://www.lsjh.tyc.edu.tw/uploads/tad_themes/school2014/config2/foot.jpg);background-size:cover;background-repeat:repeat;">
+                  <div class="col-sm-12" style="padding:40px 50px;color:#FFFFFF;line-height:180%;text-align:center;">
+                                        地址：32095桃園市中壢區龍勇路100號&nbsp;&nbsp;電話：034575200&nbsp;&nbsp;;&nbsp;&nbsp;903189000&nbsp;&nbsp;傳真：034570415&nbsp;&nbsp;教育部反霸凌專線：1953&nbsp;&nbsp;網頁維護：資訊組
+<br>
+XOOPS校園網站輕鬆架；<a href="http://www.lsjh.tyc.edu.tw/modules/tadnews/index.php?nsn=4329" target="_blank">個資保護聯絡窗口</a>;桃園市反霸凌及防治校園性別事件專線「0800-775-889」; <a href="mailto:heart@lsjh.tyc.edu.tw">輔導諮詢信箱</a>；<a href="mailto:534885@lsjh.tyc.edu.tw">學生申訴信箱</a>
+                  </div>
+                </div>
+                      </div>
+      </div>
+    </div>
+
+    <!-- 載入bootstrap -->
+    <!--Bootstrap js-->
+<script src="https://www.lsjh.tyc.edu.tw/modules/tadtools/bootstrap3/js/bootstrap.js"></script>
+
+<!-- SmartMenus jQuery plugin -->
+<script type="text/javascript" src="https://www.lsjh.tyc.edu.tw/modules/tadtools/smartmenus/jquery.smartmenus.js"></script>
+
+<!-- SmartMenus jQuery Bootstrap Addon -->
+<script type="text/javascript" src="https://www.lsjh.tyc.edu.tw/modules/tadtools/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+
+    <!-- 載入自訂js -->
+    <script type="text/javascript">
+  $(document).ready(function(){
+    $("select[name='xoops_theme_select']").addClass("form-control");
+    $("input[name='query']").addClass("form-control");
+    $("input[name='uname']").addClass("form-control");
+    $("input[name='pass']").addClass("form-control");
+
+
+    $('iframe:not([title])').attr('title','iframe content');
+
+    var mobile_device='';
+
+
+  });
+</script>
+
+
+
+    
+    <!-- 顯示參數，開發用，開發完可刪除 -->
+    
+  </body>
+</html>
